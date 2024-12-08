@@ -20,7 +20,7 @@ class Assistant:
             
                     self.recognizer.dynamic_energy_threshold = True
                     self.recognizer.adjust_for_ambient_noise(mic, duration=2)
-                    self.recognizer.pause_threshold = 2
+                    self.recognizer.pause_threshold = 2.0
             
                     audio = self.recognizer.listen(mic)
             
